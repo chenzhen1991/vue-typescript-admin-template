@@ -11,6 +11,8 @@ info:
 servers:
   - url: /mock-api/v1
 tags:
+  - name: players
+    description: 玩家相关的接口
   - name: articles
     description: Articles data related api.
   - name: roles
@@ -20,6 +22,14 @@ tags:
   - name: users
     description: Users related api.
 paths:
+  /players:
+    get: #method类型
+      tags: # 所属标签
+        - players
+      operationId: getPlayers # 操作id,必要，映射到实现函数
+      responses:
+        200:
+          description: OK
   /articles:
     get:
       tags:
