@@ -1,5 +1,7 @@
 export default {
   route: {
+    playerMgt: '玩家管理',
+    playerList: '玩家列表',
     dashboard: '首页',
     documentation: '文档',
     guide: '引导页',
